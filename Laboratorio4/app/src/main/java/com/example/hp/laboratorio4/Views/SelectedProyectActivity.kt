@@ -10,6 +10,7 @@ class SelectedProyectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selected_proyect)
+        //Obtiene los extras del intent
         val title = intent.getStringExtra("Title")
         val URL = intent.getStringExtra("URL")
 

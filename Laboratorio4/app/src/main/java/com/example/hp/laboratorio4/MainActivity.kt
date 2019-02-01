@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.example.hp.laboratorio4.Views.InicioActivity
+import com.example.hp.laboratorio4.Views.MapsActivity
 import com.example.hp.laboratorio4.Views.ProyectsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -67,6 +68,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(intent)
             }
             R.id.direccion -> {
+                val intent: Intent= Intent(this, MapsActivity::class.java)
+                startActivity(intent)
 
             }
             R.id.proyectos -> {
